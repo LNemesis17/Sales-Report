@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<meta charset="utf-8"/>
+
+
+<html>
+    
+    <head>
+        <title>Sales Report</title>
+        
+        <meta name="viewport" content="width=device-width,initial-scale=1">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"/>
+        
+        <link href="css/style.css" type="text/css" rel="stylesheet"/>
+    </head>
+
+    <body>
+        <div class="first">
+            <div style="flex-direction: row;" class="header">
+                <div class="icon" >
+                    <i class="material-icons padding-header">list</i>
+                </div>
+                <div class="name" >
+                    <i class="material-icons  padding-header">account_circle</i>
+                    <h4>User Name</h4>
+                </div>
+                <div class="text-header">
+                    <h1><b>Sales Report</b></h1>
+                </div>
+            </div>
+
+
+            <div class="align-box">
+                <div class="filters">
+                    <div>
+                        <span><b>Category: </b></span>
+                        <select placeholder="00000" id="selCat" onchange="category.call(this, event)">
+                            <option value = "0">Food</option>
+                            <option value = "1">Clothes</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span><b>Product: </b></span>
+                        <select id="selProd" onchange="product.call(this, event)">
+                            <option value = "0" id = "product0">T-Shirts</option>
+                            <option value = "1" id = "product1">Pants</option>
+                        </select>
+                    </div>
+                    <div>
+                        <span><b>Brand: </b></span>
+                        <select id="selBrand" onchange="brand.call(this, event)">
+                            <option value = "0" id = "brand0">Armani</option>
+                            <option value = "1" id = "brand1">Prada</option>
+                        </select>
+                    </div>
+                </div>
+
+                <div class="align-box" id="top_x_div"></div>
+            </div>
+        </div>
+
+    </body>
+    
+    
+    <script type="text/javascript" src="https://www.gstatic.com/charts/loader.js">
+	
+    </script>
+
+    <script type="text/javascript" src="javascript/script.js">
+       
+    </script>
+    
+    
+</html>
